@@ -1,5 +1,76 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url(/assets_li/images/login_bg.jpg) no-repeat 0 0/cover;
+
+}
+
+/* 登录页面样式 */
 .login {
     width: 100%;
     height: 100%;
-    background-color: blue;
+    position: relative;
+    overflow: hidden;
+}
+
+/* logo区域样式  */
+.logo {
+    width: 146px;
+    height: 60px;
+    background: url(/assets_li/images/logo.png) no-repeat;
+    margin: 18px 0px 0px 110px;
+    box-sizing: border-box;
+}
+
+/* 登录框样式 */
+.login_reg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 402px;
+    height: 310px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0px 28px;
+}
+
+.reg_box {
+    display: none;
+}
+
+/* 登录和自动的title */
+.login_title {
+    display: block;
+    width: 170px;
+    height: 25px;
+    margin: 14px auto;
+}
+
+.layui-form-item {
+    position: relative;
+}
+
+.layui-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.layui-input {
+    padding-left: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
 }
