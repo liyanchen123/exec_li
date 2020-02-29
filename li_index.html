@@ -4,11 +4,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=!, initial-scale=1.0">
-    <title>Document</title>
+    <title> 大事件后台主页</title>
+    <link rel="stylesheet" href="/assets_li/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets_li/fonts/iconfont.css">
+    <link rel="stylesheet" href="/assets_li/css/li_index.css">
 </head>
 
-<body>
-    后台主页
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <!-- logo 区域 -->
+            <div class="layui-logo">
+                <img src="/assets_li/images/logo.png" alt="">
+            </div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <li class="layui-nav-item">
+                    <!-- top头像区域 -->
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                        <span class="ziti_avatar">A</span>
+                        个人中心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">更换头像</a></dd>
+                        <dd><a href="">重置密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="javascript:;" class="login_out"><span
+                            class="iconfont icon-tuichu"></span>退出</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 侧边栏头像区域 -->
+                <a href="javascript:;" class="login_avatar">
+                    <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+                    <!-- 字体头像 -->
+                    <span class="ziti_avatar">A</span>
+                    <span class="welcom">欢迎&nbsp;&nbsp;*****</span>
+                </a>
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-bg-green"><a href="/home_li/dash.html" target="fm"><span
+                                class="iconfont icon-home"></span>首页</a></li>
+                    <li class="layui-nav-item">
+                        <a class="" href="javascript:;"><span class="iconfont icon-16"></span>文章管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><span class="layui-icon layui-icon-app"></span>文章类别</a></dd>
+                            <dd><a href="javascript:;"><span class="layui-icon layui-icon-app"></span>文章列表</a></dd>
+                            <dd><a href="javascript:;"><span class="layui-icon layui-icon-app"></span>发表文章</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><span class="iconfont icon-user"></span>个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/home_li/li_user.html" target="fm"><span
+                                        class="layui-icon layui-icon-app"></span>基本资料</a></dd>
+                            <dd><a href=" javascript:;"><span class="layui-icon layui-icon-app"></span>更换头像</a></dd>
+                            <dd><a href="javascript:;"><span class="layui-icon layui-icon-app"></span>重置密码</a></dd>
+                        </dl>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <iframe src="/home_li/dash.html" name="fm" frameborder="0" class="fm_container"></iframe>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            © www.itheima.com - 黑马程序员
+        </div>
+    </div>
+    <!-- 导入layui的script -->
+    <script src="/assets_li/lib/layui/layui.all.js"></script>
+    <script src="/assets_li/lib/jquery.js"></script>
+    <script src="/assets_li/js/li_baseApi.js"></script>
+    <script src="/assets_li/js/li_index.js"></script>
+
 </body>
 
 </html>
